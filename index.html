@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Author Meta -->
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Louis Maxwell</title>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+	<!--
+		CSS
+		============================================= -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="css/main-minified.css">
+	<!-- <link rel="stylesheet" href="css/main.css"> -->
+</head>
+
+<body>
+
+	<div class="loader">
+        <img src="img/book.gif" alt="Loading..." class="loader-img">
+       
+    </div>
+	<div id="top"></div>
+	<!-- Start Header Area -->
+	<header class="default-header">
+		<div class="sticky-header">
+			<div class="container">
+				<div class="row align-items-start align-items-lg-center">
+					<div class="col-lg-12 col-sm-7">
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<a class="brand" href="#"><img src="img/logo2.png" alt="Logo"></a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+								<ul class="navbar-nav color-2">
+									<li class="nav-item active">
+										<a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+									</li>
+									
+									<li class="nav-item">
+										<a class="nav-link" href="#about">About</a>
+									</li>
+									<li class="nav-item relative has-dropdown">
+										<a href="#book-reviews" class="nav-link">Reviews</a>
+
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#contact">Contact</a>
+									</li>
+								</ul>
+							</div>
+
+						</nav>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+	<!-- Start Modal Login -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content color-2">
+				<a class="cross" data-dismiss="modal" aria-label="Close"><span class="lnr lnr-cross-circle"></span></a>
+				<div class="total-content">
+					<h3>Login</h3>
+					<form action="#">
+						<div class="modal-input">
+							<label for="email">Email Address</label>
+							<input id="email" placeholder="Email Address" name="email" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Email Address'" type="email"
+								pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+						</div>
+						<div class="modal-input">
+							<label for="pass">Password</label>
+							<input id="pass" class="password" placeholder="********" name="email"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = '********'" type="password"
+								required>
+						</div>
+						<div class="remember">
+							<input type="checkbox" id="rp">
+							<label for="rp">Keep Logged in</label>
+							<div class="check-box"><i class="fa fa-check" aria-hidden="true"></i></div>
+						</div>
+						<button class="login-btn">Login</button>
+					</form>
+					<div class="text-center">
+						<a href="#" class="forgot">Forgot password?</a>
+						<p class="d-acount">Don’t have an account? <a data-dismiss="modal" aria-label="Close"
+								data-toggle="modal" data-target="#myModaltwo">Create Account</a> here</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal Login -->
+	<!-- Start Modal Sign Up -->
+	<div class="modal fade" id="myModaltwo" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content color-2">
+				<a class="cross" data-dismiss="modal" aria-label="Close"><span class="lnr lnr-cross-circle"></span></a>
+				<div class="total-content">
+					<h3>Register</h3>
+					<form action="#">
+						<div class="modal-input">
+							<label for="email1">Email Address</label>
+							<input id="email1" placeholder="Your Full Name" name="email" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Your Full Name'" type="email" required>
+						</div>
+						<div class="modal-input">
+							<label for="email2">Email Address</label>
+							<input id="email2" placeholder="Email Address" name="email2" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Email Address'" type="email"
+								pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+						</div>
+						<div class="modal-input">
+							<label for="pass2">Password</label>
+							<input id="pass2" class="password" placeholder="********" name="pass1"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = '********'" type="password"
+								required>
+						</div>
+						<div class="modal-input">
+							<label for="cpass">Confirm Password</label>
+							<input id="cpass" class="password" placeholder="********" name="pass"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = '********'" type="password"
+								required>
+						</div>
+						<div class="remember">
+							<input type="checkbox" id="rp2">
+							<label for="rp2">Keep me logged in</label>
+							<div class="check-box"><i class="fa fa-check" aria-hidden="true"></i></div>
+						</div>
+						<button class="login-btn">Create Account</button>
+					</form>
+					<div class="text-center">
+						<p class="d-acount">If you already have an account, <a href="#" class="modal-2"
+								data-dismiss="modal" aria-label="Close" data-toggle="modal"
+								data-target="#myModal">login</a> here</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal Sign Up -->
+	<!-- Start Banner Area -->
+	<section class="banner-area color-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="active-banner-carousel">
+						<div class="item">
+							<h1 class="text-white">How to get rid of Stress and its side effects</h1>
+							<p class="text-white mt-20">Be careful what you believe because that is what you will
+								experience. Your belief system is a mechanism which is uniquely yours. It is powered by
+								your desire and controlled by your thoughts and actions.</p>
+						</div>
+						<div class="item">
+							<h1 class="text-white">Believing Is The Absence Of Doubt</h1>
+							<p class="text-white mt-20">Be careful what you believe because that is what you will
+								experience. Your belief system is a mechanism which is uniquely yours. It is powered by
+								your desire and controlled by your thoughts and actions.</p>
+						</div>
+						<div class="item">
+							<h1 class="text-white">Have you noticed how everybody takes it for granted</h1>
+							<p class="text-white mt-20">Be careful what you believe because that is what you will
+								experience. Your belief system is a mechanism which is uniquely yours. It is powered by
+								your desire and controlled by your thoughts and actions.</p>
+						</div>
+						<div class="item">
+							<h1 class="text-white">Every one of these comments sounds a lot like self</h1>
+							<p class="text-white mt-20">Be careful what you believe because that is what you will
+								experience. Your belief system is a mechanism which is uniquely yours. It is powered by
+								your desire and controlled by your thoughts and actions.</p>
+						</div>
+						<div class="item">
+							<h1 class="text-white">Example: I was a latchkey kid… and everyone</h1>
+							<p class="text-white mt-20">Be careful what you believe because that is what you will
+								experience. Your belief system is a mechanism which is uniquely yours. It is powered by
+								your desire and controlled by your thoughts and actions.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Banner Area -->
+	<!-- Start About Area -->
+	<div class="about-area relative">
+		<img src="img/2.png" alt="E-Book" class="about-book">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="about-content">
+						<p>You will undoubtedly have dreams. Whether you dream of having the perfect house with the
+							perfect car, or you dream of settling down to have a family, even if you dream of retiring
+							by the time you’re 40, the one key to success is doing something about it. It may sound
+							obvious but if you dream of retiring before you reach 40 and yet you aimlessly skip from job
+							to job with no hope of progressing a career, it is very unlikely you will achieve your goal.
+						</p>
+						<p>Set goals and ambitions and write them down on a piece of paper. Make sure that you are
+							always striving to reach those goals. So</p>
+						<!-- <div class="btn-group d-flex flex-wrap mt-20">
+							<a href="#" class="btn-first color-2"><span>Buy Paperback</span><span
+									class="lnr lnr-cart ml-10"></span></a>
+							<a href="#" class="btn-first color-2 ml-10"><span>Buy E-book</span><span
+									class="lnr lnr-cart ml-10"></span></a>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About Area -->
+	<!-- Start Look Inside Area -->
+	<div class="container border-top">
+		<div class="section-full">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="section-head text-center">
+						<h2 class="h1 mb-15">Look Inside</h2>
+						<p>You should be able to find several indispensable facts about motivation in the following
+							paragraphs. If there’s at least one fact you didn’t know before, imagine the difference it
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="book-inside-carousel d-flex justify-content-between color-2">
+						<div class="book-page" style="background: url(img/thumb/1.jpg);">
+							<div class="total-overlay">
+								<div class="overlay-content">
+									<h4 class="text-white">Page 48-49</h4>
+									<span class="text-white">Copyrighted Material</span>
+								</div>
+								<a href="img/large/1.jpg" class="gallery pop-up-btn"><span
+										class="lnr lnr-plus-circle"></span></a>
+							</div>
+						</div>
+						<div class="book-page" style="background: url(img/thumb/2.jpg);">
+							<div class="total-overlay">
+								<div class="overlay-content">
+									<h4 class="text-white">Page 48-49</h4>
+									<span class="text-white">Copyrighted Material</span>
+								</div>
+								<a href="img/large/2.jpg" class="gallery pop-up-btn"><span
+										class="lnr lnr-plus-circle"></span></a>
+							</div>
+						</div>
+						<div class="book-page" style="background: url(img/thumb/3.jpg);">
+							<div class="total-overlay">
+								<div class="overlay-content">
+									<h4 class="text-white">Page 48-49</h4>
+									<span class="text-white">Copyrighted Material</span>
+								</div>
+								<a href="img/large/3.jpg" class="gallery pop-up-btn"><span
+										class="lnr lnr-plus-circle"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="share-book text-center">
+						<div class="social-share d-flex justify-content-center">
+							<div class="social-link d-flex felx-wrap">
+								<a href="#" class="social-btn color-2"
+									onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A//codepixar.com/','new window',config='left=200,top=200,width=500,height=500,toolbar=1,resizable=0')"><i
+										class="fa fa-facebook"></i></a>
+								<a href="#" class="social-btn color-2"
+									onclick="window.open('https://twitter.com/home?status=http%3A//codepixar.com/','new window',config='left=200,top=200,width=500,height=500,toolbar=1,resizable=0')"><i
+										class="fa fa-twitter"></i></a>
+								<a href="#" class="social-btn color-2"
+									onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A//codepixar.com/&amp;title=&amp;summary=&amp;source=','new window',config='left=200,top=200,width=500,height=500,toolbar=1,resizable=0')"><i
+										class="fa fa-linkedin"></i></a>
+								<a href="#" class="social-btn color-2"
+									onclick="window.open('https://plus.google.com/share?url=http%3A//codepixar.com/','new window',config='left=200,top=200,width=500,height=500,toolbar=1,resizable=0')"><i
+										class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+						<span>Share this book</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Look Inside Area -->
+	<!-- Start Author Area -->
+	<section id="about" class="section-bg section-full" id="">
+		<div class="container">
+			<div class="row justify-content-center mb-50">
+				<div class="col-md-8">
+					<div class="section-head text-center">
+						<h2 class="h1 mb-15">About the Author</h2>
+						<p>You should be able to find several indispensable facts about motivation in the following
+							paragraphs. If there’s at least one fact you didn’t know before, imagine the difference it
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="author-column mt-30">
+						<p>Do you want to be even more successful? Learn to love learning and growth. The more effort
+							you put into improving your skills, the bigger the payoff you will get. Realize that things
+							will be hard at first, but the rewards will be worth it. Many of us have to be reminded that
+							almost everything worthwhile in our lives is hard at first. Learning to walk was hard at
+							first, but gradually we learned and now it is effortless. The same holds true for our more
+							advanced skills such as, sports, music, art, etc. We forget these past struggles to learn
+							and take them for granted now.</p>
+						<p>When most people begin to try something for the first time, it usually doesn’t turn out
+							particularly well. It doesn’t mean we are bad, or stupid, or anything like that, it just
+							means that most things of any complexity take awhile to learn. Given this, the surprising
+							thing is how most people react when they begin to learn a new skill and it does not go well.
+							Most people at </p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="author-column mt-30">
+						<p>The Law – Everything is energy. Choose to believe this law. You must accept it.</p>
+						<p>Your thoughts, your feelings, what you focus on are all energy. Do you understand that you
+							have created the person you have become and created the quality of life you have.</p>
+						<p>Take a good look at what you have created. You, and only you, are responsible for your
+							present level of success in life.</p>
+						<p>Right now, reflect on ways to make a positive difference in the quality of your life. First,
+							choose the area of life you want to focus. It can be your relationshi</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="author-column mt-30">
+						<img src="img/author.jpg" alt="" class="img-fluid">
+						<div class="author-details">
+							<div class="author-name">
+								<h3>Louise Maxwell</h3>
+								<span>Published Author</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="more-books">
+				<h3>More Books from this Author</h3>
+				<div class="active-more-books color-2">
+					<div class="book-page" style="background: url(img/m1.jpg);">
+						<div class="total-overlay">
+							<div class="overlay-content">
+								<h4><a href="#" class="text-white">The spiritual magnet</a></h4>
+								<span class="text-white">The Softcover</span>
+							</div>
+						</div>
+					</div>
+					<div class="book-page" style="background: url(img/m2.jpg);">
+						<div class="total-overlay">
+							<div class="overlay-content">
+								<h4><a href="#" class="text-white">The spiritual magnet</a></h4>
+								<span class="text-white">The Softcover</span>
+							</div>
+						</div>
+					</div>
+					<div class="book-page" style="background: url(img/m3.jpg);">
+						<div class="total-overlay">
+							<div class="overlay-content">
+								<h4><a href="#" class="text-white">The spiritual magnet</a></h4>
+								<span class="text-white">The Softcover</span>
+							</div>
+						</div>
+					</div>
+					<div class="book-page" style="background: url(img/m4.jpg);">
+						<div class="total-overlay">
+							<div class="overlay-content">
+								<h4><a href="#" class="text-white">The spiritual magnet</a></h4>
+								<span class="text-white">The Softcover</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Author Area -->
+	<!-- Start Reviews Area -->
+	<section id="book-reviews" class="section-full">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="book-review">
+						<h2>Book Reviews</h2>
+						<p>Be careful what you believe because that is what you will experience. Your belief system is a
+							mechanism which is uniquely yours.</p>
+					</div>
+					<div class="active-review-carousel color-2">
+						<div class="item">
+							<p>“Every team at Patreon uses Asana to keep track of goals, expectations
+								and projectsEvery team at Patreon uses Asana to keep track of goals,
+								expectations, and projects. Every team at Patreon uses Asana
+								to keep track of goals, expectationsand projectsEvery team at Patreon
+								uses Asana to keep track of goals, expectations, and projects”</p>
+							<h4>Tyler Palmer</h4>
+							<span>Head of Ops at Patreon</span>
+						</div>
+						<div class="item">
+							<p>“Every team at Patreon uses Asana to keep track of goals, expectations
+								and projectsEvery team at Patreon uses Asana to keep track of goals,
+								expectations, and projects. Every team at Patreon uses Asana
+								to keep track of goals, expectationsand projectsEvery team at Patreon
+								uses Asana to keep track of goals, expectations, and projects”</p>
+							<h4>Tyler Palmer</h4>
+							<span>Head of Ops at Patreon</span>
+						</div>
+						<div class="item">
+							<p>“Every team at Patreon uses Asana to keep track of goals, expectations
+								and projectsEvery team at Patreon uses Asana to keep track of goals,
+								expectations, and projects. Every team at Patreon uses Asana
+								to keep track of goals, expectationsand projectsEvery team at Patreon
+								uses Asana to keep track of goals, expectations, and projects”</p>
+							<h4>Tyler Palmer</h4>
+							<span>Head of Ops at Patreon</span>
+						</div>
+						<div class="item">
+							<p>“Every team at Patreon uses Asana to keep track of goals, expectations
+								and projectsEvery team at Patreon uses Asana to keep track of goals,
+								expectations, and projects. Every team at Patreon uses Asana
+								to keep track of goals, expectationsand projectsEvery team at Patreon
+								uses Asana to keep track of goals, expectations, and projects”</p>
+							<h4>Tyler Palmer</h4>
+							<span>Head of Ops at Patreon</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="book-review">
+						<h2>Frequently Asked Questions</h2>
+						<p>Be careful what you believe because that is what you will experience. Your belief system is a
+							mechanism which is uniquely yours.</p>
+					</div>
+					<div class="book-accordion" id="accordion" role="tablist">
+						<div class="book-card">
+							<div class="book-card-header color-2" role="tab" id="headingOne">
+								<h5 class="mb-0">
+									<a class="collapsed d-flex justify-content-between align-items-center"
+										data-toggle="collapse" href="#collapseOne" aria-expanded="true"
+										aria-controls="collapseOne">
+										<span>How does Asana’s pricing work?</span>
+										<span class="lnr lnr-chevron-down"></span>
+									</a>
+								</h5>
+							</div>
+							<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne"
+								data-parent="#accordion">
+								<div class="book-card-body">
+									You can purchase Asana with any major credit card. For annual subscriptions over 25
+									members, we can issue an invoice payable by bank transfer or check. Please contact
+									us to arrange an invoice purchase
+								</div>
+							</div>
+						</div>
+						<div class="book-card">
+							<div class="book-card-header color-2" role="tab" id="headingTwo">
+								<h5 class="mb-0">
+									<a class="collapsed d-flex justify-content-between align-items-center"
+										data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
+										aria-controls="collapseTwo">
+										<span>What forms of payment do you accept?</span>
+										<span class="lnr lnr-chevron-down"></span>
+									</a>
+								</h5>
+							</div>
+							<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
+								data-parent="#accordion">
+								<div class="card-body">
+									You can purchase Asana with any major credit card. For annual subscriptions over 25
+									members, we can issue an invoice payable by bank transfer or check. Please contact
+									us to arrange an invoice purchase
+								</div>
+							</div>
+						</div>
+						<div class="book-card">
+							<div class="book-card-header color-2" role="tab" id="headingThree">
+								<h5 class="mb-0">
+									<a class="collapsed d-flex justify-content-between align-items-center"
+										data-toggle="collapse" href="#collapseThree" aria-expanded="false"
+										aria-controls="collapseThree">
+										<span>How secure is Asana?</span>
+										<span class="lnr lnr-chevron-down"></span>
+									</a>
+								</h5>
+							</div>
+							<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
+								data-parent="#accordion">
+								<div class="card-body">
+									You can purchase Asana with any major credit card. For annual subscriptions over 25
+									members, we can issue an invoice payable by bank transfer or check. Please contact
+									us to arrange an invoice purchase
+								</div>
+							</div>
+						</div>
+						<div class="book-card">
+							<div class="book-card-header color-2" role="tab" id="headingFour">
+								<h5 class="mb-0">
+									<a class="collapsed d-flex justify-content-between align-items-center"
+										data-toggle="collapse" href="#collapseFour" aria-expanded="false"
+										aria-controls="collapseThree">
+										<span>Do you offer academic pricing?</span>
+										<span class="lnr lnr-chevron-down"></span>
+									</a>
+								</h5>
+							</div>
+							<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour"
+								data-parent="#accordion">
+								<div class="card-body">
+									You can purchase Asana with any major credit card. For annual subscriptions over 25
+									members, we can issue an invoice payable by bank transfer or check. Please contact
+									us to arrange an invoice purchase
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Reviews Area -->
+
+	<!-- Start Events Area -->
+	
+	<!-- End Events Area -->
+	<!-- Start Cta -->
+	<div class="cta-area color-2">
+		<div class="container">
+			<div class="d-flex justify-content-between flex-wrap align-items-center">
+				<div class="content">
+					<h4>I can tel you, honest friend, what to believe is: believe life, <br> it teached better than any
+						book.</h4>
+				</div>
+				<a href="https://www.youtube.com/watch?v=VYFj1cqB-iw" class="play-btn btn-first color-2"><span
+						class="text-white">Watch This Video</span></a>
+			</div>
+		</div>
+	</div>
+	<!-- End Cta -->
+	<!-- Start Downloads -->
+
+	<!-- End Downloads -->
+	<!-- Start Contact Area -->
+	<section id="contact" class="section-full section-bg">
+		<div class="container">
+			<div class="row justify-content-center mb-50">
+				<div class="col-md-8">
+					<div class="section-head text-center">
+						<h2 class="h1 mb-15">Contact Us</h2>
+						<p>You should be able to find several indispensable facts about motivation in the following
+							paragraphs. If there’s at least one fact you didn’t know before, imagine the difference it
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<p>Dramatically reintermediate effective applications after high-payoff core competencies.
+						Authoritatively optimize collaborative benefits for error-free communities. Dramatically
+						reintermediate effective applications after high-payoff core competencies. Authoritatively
+						optimize collaborative benefits for error-free communities.</p>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="address mt-20">
+								<h4>Autograph Address</h4>
+								<p>Emperor Publishing,<br> 56/8, bir uttam qazi nuruzzaman <br> road, Lorem-ipsum - 1205</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="address mt-20">
+								<h4>Autograph Address</h4>
+								<a href="tel:0000">012 (88) 017 25 656 565</a> <br>
+								<a href="tel:0000">012 (88) 017 25 656 565</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<form id="myForm" action="#"
+						method="post" class="contact-form mt-30">
+						<div class="single-input color-2 mb-10">
+							<input type="text" name="fname" placeholder="Full Name" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Full Name'" required>
+						</div>
+						<div class="single-input color-2 mb-10">
+							<input type="email" name="email" placeholder="Email Address"
+								pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required>
+						</div>
+						<div class="single-input color-2 mb-10">
+							<input type="text" name="subject" placeholder="Subject" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Subject'" required>
+						</div>
+
+						<div class="single-input color-2 mb-10">
+							<textarea name="message" placeholder="Type your message here..."
+								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type your message here...'"
+								required></textarea>
+						</div>
+						<div class="d-flex justify-content-end"><button
+								class="submit-btn button btn-first color-1"><span>Send Message</span> </button></div>
+						<div class="alert"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Contact Area -->
+	<!-- Start Subscribe Area -->
+	<section class="section-full">
+		<div class="container">
+			<div class="row justify-content-center mb-50">
+				<div class="col-md-8">
+					<div class="section-head text-center">
+						<h2 class="h1 mb-15">Suscribe for our Newsletter</h2>
+						<p>You should be able to find several indispensable facts about motivation in the following
+							paragraphs. If there’s at least one fact you didn’t know before, imagine the difference it
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div id="">
+						<form target="_blank" novalidate action="" method="get"
+							class="subscription relative d-flex justify-content-center">
+							<input type="email" name="EMAIL" placeholder="Enter your email address"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your email address'"
+								required>
+							<div style="position: absolute; left: -5000px;">
+								<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
+							</div>
+							<button type="submit" class="btn-first p-40 button color-2"
+								name="subscribe"><span>Subscribe</span></button>
+							<div class="info color-2"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Subscribe Area -->
+	<!-- Start Footer -->
+	<footer class="footer-1 footer-bg-1">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-4">
+					<div class="footer-content text-center">
+						<img src="img/f2.png" alt="" class="footer-logo">
+						<div class="social-link d-flex justify-content-center felx-wrap">
+							<a href="//www.facebook.com/" class="social-btn color-2 footer-color-1"><i
+									class="fa fa-facebook"></i></a>
+							<a href="//twitter.com/" class="social-btn color-2 footer-color-1"><i
+									class="fa fa-twitter"></i></a>
+							<a href="//www.linkedin.com/in//" class="social-btn color-2 footer-color-1"><i
+									class="fa fa-linkedin"></i></a>
+							<a href="//plus.google.com/u/" class="social-btn color-2 footer-color-1"><i
+									class="fa fa-google-plus"></i></a>
+							<a href="//dribbble.com/" class="social-btn color-2 footer-color-1"><i
+									class="fa fa-dribbble"></i></a>
+							<a href="//www.behance.net/" class="social-btn color-2 footer-color-1"><i
+									class="fa fa-behance"></i></a>
+						</div>
+						<p class="color-2">Copyright &copy; 2024. All Rights Reserved | <a href="#">Bestbook</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<!-- <script src="js/vendor/tether.min.js"></script> -->
+	<script src="../../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+		crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.nice-select.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
+
+<script>
+	// script.js
+  // script.js
+  window.addEventListener("load", function() {
+    // After the page is fully loaded, hide the loader and show the content
+    document.body.classList.add("loaded");
+});
+  </script>
+
+
